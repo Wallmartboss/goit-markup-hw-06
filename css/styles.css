@@ -17,9 +17,9 @@ img {
   display: block;
 }
 .container {
-  max-width: 1158px;
-  padding-left: 0;
-  padding-right: 0;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: 156px;
   margin-right: 156px;
   display: block;
@@ -27,7 +27,7 @@ img {
 header .container {
   display: flex;
 }
-header {
+.headerrr {
   border-bottom: 1px solid #e7e9fc;
   max-width: 1440px;
 }
@@ -46,6 +46,8 @@ body {
 }
 .section:first-child {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .section:nth-child(3) {
   background-color: #f4f4fd;
@@ -57,7 +59,6 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-top: 68px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
@@ -78,12 +79,12 @@ body {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 16px 16px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 84px;
+  margin-bottom: 16px;
 }
 .button-a:hover,
 .button-a:focus {
@@ -98,6 +99,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .logo {
   text-decoration: none;
@@ -111,25 +113,22 @@ body {
 }
 .cont-nav {
   display: flex;
-  gap: 76px;
-  align-items: baseline;
-  margin-top: 24px;
+  align-items: center;
 }
 .nav-item {
   text-decoration: none;
 }
 .menu-nav {
-  margin-top: 0;
   display: flex;
   gap: 40px;
+  padding: 24px 0 24px;
 }
 .addr {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
-  margin-top: 24px;
+  margin-top: 40px;
   margin-left: 332px;
-  flex-shrink: 0;
 }
 .addra {
   font-style: normal;
@@ -173,6 +172,7 @@ body {
 .value-team {
   background-color: #fff;
   width: calc((100%-72px) / 4);
+  border-radius: 0 0 4px 4px;
 }
 .value-item {
   font-weight: 400;
@@ -203,6 +203,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .name {
   font-weight: 500;
@@ -259,9 +260,11 @@ body {
   background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
-  max-width: 1440px;
+  width: 1440px;
+  display: inline-block;
 }
 .foot-logo {
+  display: block;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -270,6 +273,7 @@ body {
   text-transform: uppercase;
   line-height: 1.17;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 .foot-text {
   font-weight: 400;
@@ -278,7 +282,6 @@ body {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-top: 16px;
 }
 .address-item:hover,
 .address-item:focus {
