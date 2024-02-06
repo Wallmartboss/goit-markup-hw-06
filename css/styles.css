@@ -113,11 +113,12 @@ body {
 .cont-nav {
   display: flex;
   align-items: center;
+    padding-top: 24px; 
+  padding-bottom: 24px;
 }
 .nav-item {
   text-decoration: none;
-  padding-top: 24px; 
-  padding-bottom: 24px;
+ 
 }
 .menu-nav {
   display: flex;
@@ -203,7 +204,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;-po
+  color: #2e2f42;
   margin-bottom: 8px;
 }
 .person {
@@ -244,10 +245,7 @@ body {
 .value-portfolio {
   background-color: #fff;
   margin-top: 0;
-  width: calc((100% - 48px) / 3);
-}
-.value-portfolio:first-child {
-  width: calc((100%-48px) / 3);
+ width: calc((100%-48px) / 3);
 }
 .sphere {
   font-size: 16px;
