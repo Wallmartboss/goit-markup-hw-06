@@ -116,8 +116,6 @@ body {
 }
 .nav-item {
   text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .menu-nav {
   display: flex;
@@ -148,6 +146,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav-text:hover {
   color: #404bbf;
@@ -240,9 +240,9 @@ body {
 }
 
 .value-portfolio {
+  width: calc((100% - 48px) / 3);
   background-color: #fff;
   margin-top: 0;
-  width: calc((100%-48px) / 3);
 }
 .sphere {
   font-size: 16px;
