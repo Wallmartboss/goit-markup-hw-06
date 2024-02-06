@@ -113,17 +113,15 @@ body {
 .cont-nav {
   display: flex;
   align-items: center;
-   
 }
 .nav-item {
   text-decoration: none;
-  padding-top: 24px; 
+  padding-top: 24px;
   padding-bottom: 24px;
 }
 .menu-nav {
   display: flex;
   gap: 40px;
-  
 }
 .addr {
   display: flex;
@@ -210,9 +208,7 @@ body {
 .person {
   border-radius: 0 0 4px 4px;
   padding: 32px 0px 32px 0px;
-  box-shadow right: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-  box-shadow bottom: 0 1px 1px 0 rgba(46, 47, 66, 0.16);
-  box-shadow left: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
 }
 .name {
