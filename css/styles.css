@@ -2,6 +2,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -25,6 +27,11 @@ img {
 header .container {
   display: flex;
 }
+header {
+  border-bottom: 1px solid #e7e9fc;
+  max-width: 1440px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -218,8 +225,8 @@ body {
 }
 .portf {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 24px;
   width: 100%;
   padding-left: 0;
 }
@@ -227,9 +234,7 @@ body {
 .value-portfolio {
   background-color: #fff;
   width: calc((100%-48px) / 3);
-
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-top: 0;
 }
 
 .sphere {
@@ -238,6 +243,7 @@ body {
   line-height: 1.5;
   color: #434455;
   padding-bottom: 32px;
+  padding-left: 16px;
 }
 .type-portfolio {
   font-weight: 500;
@@ -247,6 +253,7 @@ body {
   color: #2e2f42;
   margin-top: 32px;
   margin-bottom: 8px;
+  padding-left: 16px;
 }
 .foot {
   background: #2e2f42;
@@ -286,4 +293,22 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.images {
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
