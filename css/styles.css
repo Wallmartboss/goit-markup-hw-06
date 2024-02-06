@@ -113,12 +113,12 @@ body {
 .cont-nav {
   display: flex;
   align-items: center;
-    padding-top: 24px; 
-  padding-bottom: 24px;
+   
 }
 .nav-item {
   text-decoration: none;
- 
+  padding-top: 24px; 
+  padding-bottom: 24px;
 }
 .menu-nav {
   display: flex;
@@ -240,12 +240,13 @@ body {
   row-gap: 48px;
   width: 100%;
   padding-left: 0;
+  width: calc((100%-48px) / 3);
 }
 
 .value-portfolio {
   background-color: #fff;
   margin-top: 0;
- width: calc((100%-48px) / 3);
+  width: calc((100%-48px) / 3);
 }
 .sphere {
   font-size: 16px;
