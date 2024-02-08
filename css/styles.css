@@ -52,7 +52,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(./images/people-office.jpg);
+    url("https://github.com/Wallmartboss/goit-markup-hw-04/blob/main/images/people-office.jpg?raw=true");
 }
 .section:nth-child(3) {
   background-color: #f4f4fd;
