@@ -29,6 +29,10 @@ header .container {
 .headerrr {
   border-bottom: 1px solid #e7e9fc;
   max-width: 1440px;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 
+  0 1px 1px 0 rgba(46, 47, 66, 0.16),
+   0 2px 1px 0 rgba(46, 47, 66, 0.08);
+background: var(--white);
 }
 
 body {
@@ -47,6 +51,9 @@ body {
   /*background-color: #2e2f42;*/
   padding-top: 188px;
   padding-bottom: 188px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -60,16 +67,14 @@ body {
 .icon {
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  width: 100%;
-  height: 42.42%;
-  margin-bottom: 8px;
-  
-}
+  width: 264px;
+  height: 112px;
+ }
+ 
 .social-icon {
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
+ 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
 }
@@ -80,24 +85,25 @@ body {
   gap: 24px;
   padding-left: 0;
 }
-.soc-links .link {
+.link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-}
-.link:hover .social-icon {
-  background-color: #31d0aa;
-}
-.link:focus .social-icon {
-  background-color: #31d0aa;
-}
+  background-color: #4d5ae5;
+  border-radius: 50%;
 
+}
+.link:hover,
+.link:focus {
+  background-color: #31d0aa;
+  border-radius: 50%;
+}
 .title-section-a {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07;
+  line-height: 1.07;    
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 48px;
@@ -127,6 +133,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-a:hover,
 .button-a:focus {
@@ -159,6 +166,7 @@ body {
 }
 .nav-item {
   text-decoration: none;
+  color: #404bbf;
    }
 .menu-nav {
   display: flex;
@@ -181,6 +189,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   white-space: nowrap;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-text {
   padding-top: 24px;
@@ -192,6 +201,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .nav-text:hover,
@@ -203,13 +213,14 @@ body {
 .nav-text::after {
   position: absolute;
   content: "";
-  top: 59px;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
   background-color: #404bbf;
-    border-radius: 4px;
+    border-radius: 2px;
     transition: transform 5ms;
+   
     transform: scale(0);
 
   }
@@ -217,8 +228,24 @@ body {
   .nav-text:hover::after {
     transform: scale(1);
   }
+  .nav-text:focus::after {
+    transform: scale(1);
+  }
 .addr-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.fs-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px; 
+  background-color: #f4f4fd;
+  border-radius: 4px; 
+  margin-bottom: 8px; 
+
+}
+
+
 .benef {
   display: flex;
   width: 100%;
@@ -234,6 +261,9 @@ body {
   background-color: #fff;
   width: calc((100%-72px) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .value-item {
   font-weight: 400;
@@ -269,8 +299,7 @@ body {
 .person {
   border-radius: 0 0 4px 4px;
   padding: 32px 0px 32px 0px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
+    background: #fff;
 }
 .name {
   font-weight: 500;
