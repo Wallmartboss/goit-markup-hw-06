@@ -100,12 +100,15 @@ body {
 }
 
 .link:hover {
-  background-color: #31d0aa;
+  background-color: #404bbf;
   border-radius: 50%;
 }
 .link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
   border-radius: 50%;
+}
+.social-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title-section-a {
   font-weight: 700;
@@ -337,6 +340,7 @@ body {
   background-color: #fff;
   margin-top: 0;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .sphere {
   font-size: 16px;
@@ -455,4 +459,22 @@ body {
   flex-shrink: 0;
   gap: 16px;
   padding-left: 0;
+}
+.f-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+.f-link:hover {
+  background-color: #31D0AA;
+  border-radius: 50%;
+}
+.f-link:focus {
+  background-color: #31D0AA;
+  border-radius: 50%;
 }
