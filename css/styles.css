@@ -548,19 +548,28 @@ body {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  padding: 8px 0 8px 24px;
+  padding: 8px 24px;
   cursor: pointer;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
   color: #fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input {
   border: 1px solid #fff;
-  background-color: #2e2f42;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   color: #fff;
-
   border-radius: 4px;
   padding: 8px 16px;
   width: 264px;
@@ -572,19 +581,13 @@ input::placeholder {
   color: #fff;
 }
 
-.btn-div {
-
-  display: flex;
-  align-items: end;
-  margin-left: 24px;
-}
-
 .icon-btn {
   margin-left: 16px;
 }
 
 .form {
   display: flex;
+  gap: 24px;
 }
 
 .modal {}
@@ -593,10 +596,11 @@ input::placeholder {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -606,9 +610,9 @@ input::placeholder {
   background-repeat: no-repeat;
   object-fit: cover;
   z-index: 9;
-  opacity: 0;
+  /*opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: none;*/
 }
 
 .backdrope.is-open {
@@ -627,36 +631,52 @@ input::placeholder {
 }*/
 
 .modal-win {
-  position: relative;
-  width: max-content;
-  height: fit-content;
-  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   border-radius: 4px;
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
+  padding: 72px 24px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close {
   position: absolute;
-  border-radius: 4px;
+  border-radius: 50%;
   padding: 0;
   text-align: center;
   right: 24px;
   top: 24px;
-  fill: #000;
-  border: none;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+
+}
+
+.icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-modal {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
-
 
 }
 
@@ -667,7 +687,6 @@ input::placeholder {
   width: 360px;
   height: 40px;
   padding: 8px 16px 8px 36px;
-  margin-top: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -684,16 +703,22 @@ input::placeholder {
   border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
+.form-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
 .form-label {
-  margin: 0 24px;
+
   display: block;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  position: relative;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: auto;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -721,7 +746,12 @@ input::placeholder {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 72px;
+  margin-bottom: 16px;
+}
+
+.input-field-icon {
+  position: relative;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input::placeholder,
@@ -740,7 +770,7 @@ input::placeholder {
 
 }
 
-.form-label:focus-within>svg {
+.input-field-icon:focus-within>svg {
   fill: #4d5ae5;
 }
 
@@ -760,7 +790,7 @@ input::placeholder {
 
 .icon-input {
   position: absolute;
-  top: 40%;
+  top: 8px;
   left: 16px;
   /*fill: #242996;
   color: #404bbf;*/
