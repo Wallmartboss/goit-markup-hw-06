@@ -615,9 +615,9 @@ input::placeholder {
   background-repeat: no-repeat;
   object-fit: cover;
   z-index: 9;
-  /*opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: none;*/
+  pointer-events: none;
 }
 
 .backdrope.is-open {
