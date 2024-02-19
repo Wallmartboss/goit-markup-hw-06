@@ -563,6 +563,11 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.foot-btn:hover,
+.foot-btn:focus {
+  background-color: #404bbf;
+}
+
 .form-input {
   border: 1px solid #fff;
   background-color: transparent;
@@ -779,18 +784,12 @@ input::placeholder {
 .modal-form-text:focus-within {
   border: 1px solid #4d5ae5;
   outline: none;
-
 }
 
 .input-field-icon:focus-within>svg {
-  fill: #4d5ae5;
+  fill: -po#4d5ae5;
 }
 
-
-
-/*.modal-form-chechbox:checked:checked {
-  <svg width="64" height="64"><use href="./images/icons.svg#icon-email"></use></svg>
-}*/
 .accept {
   display: flex;
   align-items: center;
@@ -804,8 +803,6 @@ input::placeholder {
   position: absolute;
   top: 50%;
   left: 16px;
-  /*fill: #242996;
-  color: #404bbf;*/
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -822,16 +819,10 @@ input::placeholder {
 }
 
 .chk-btn {
-  /* position: relative;
-  width: 24px;
-  height: 24px;*/
-
-  /*display: block;*/
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  /*padding-left: 18px;*/
 
 }
 
@@ -848,50 +839,21 @@ input::placeholder {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  /*line-height: 1.33333;
-  text-decoration-skip-ink: none;
-  color: #4d5ae5;
-  margin-left: 4px;*/
 }
-
-/*.check__box {
-  position: absolute;
-  margin-top: 0;
-  margin-left: -24px;
-  width: 16px;
-  height: 16px;
-  /*background-image: url("/images/icons.svg#icon-click")
-    /*url("https://github.com/Wallmartboss/goit-markup-hw-05/blob/main/images/icons.svg#icon-empty-checkbox");*/
-/* background-color: #47889c;
-}
-
-.chk-btn input:checked .chkk {
-  background-image: url(/images/icons.svg#icon-click);
-  background-color: #3a1010;
-
-}
-
-.check__box input:checked {
-  background-image: url(/images/icons.svg#icon-click);
-
-}*/
 
 .pr-pol {
+
   margin-bottom: 24px;
-  /*display: block;
-  
-  align-items: center;*/
 }
 
 .pr-pol input:checked .chk-policy {
-  background-color: var(#404bbf);
+  background-color: #404bbf;
   border: none;
-  fill: var(#F4F4FD);
+  fill: #F4F4FD;
 }
 
 .ppl {
-  color: var(#4d5ae5)
+  color: #4d5ae5;
 }
 
 .icon-chk {
@@ -900,16 +862,7 @@ input::placeholder {
   left: 0;
 }
 
-.chk-btn:active .icon-chk {
-  <svg width="24" height="24"><use href="./images/icons.svg#icon-click"></use></svg>
+.form-button:hover,
+.form-button:focus {
+  background-color: #404bbf;
 }
-
-
-
-/*.form-label input.modal-form-input::before {
-  position: absolute;
-  top: 0px;
-  left: -5px;
-  content: WWWAAAAA;
-  background-image: <svg width="8" height="8" ><use href="./images/icons.svg#icon-email" ></use></svg>;
-}*/
