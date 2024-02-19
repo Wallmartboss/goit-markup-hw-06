@@ -615,9 +615,9 @@ input::placeholder {
   background-repeat: no-repeat;
   object-fit: cover;
   z-index: 9;
-  opacity: 0;
+  /*opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: none;*/
 }
 
 .backdrope.is-open {
@@ -787,7 +787,7 @@ input::placeholder {
 }
 
 .input-field-icon:focus-within>svg {
-  fill: -po#4d5ae5;
+  fill: #4d5ae5;
 }
 
 .accept {
