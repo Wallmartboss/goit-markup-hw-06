@@ -790,15 +790,6 @@ input::placeholder {
   fill: #4d5ae5;
 }
 
-.accept {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
-
 .icon-input {
   position: absolute;
   top: 50%;
@@ -846,7 +837,7 @@ input::placeholder {
   margin-bottom: 24px;
 }
 
-.pr-pol input:checked .chk-policy {
+#user-privacy:checked+.chk-btn .chk-policy {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
