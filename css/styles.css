@@ -43,6 +43,7 @@ img {
   max-width: 320px;
   display: block;
   margin: 0 auto;
+  /* min-width: 320px; */
 }
 
 
@@ -226,7 +227,9 @@ body {
 
 .menu-icon {
   background-color: transparent;
-  margin-left: 73px;
+  border: none;
+  /* margin-left: 73px; */
+  margin: 16px 16px 16px 73px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -293,13 +296,101 @@ body {
   transform: scale(1);
 }
 
-/*.nav-item:first-child .nav-text::after {
-  transform: scale(1);
-}*/
-
 .addr-item {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Стилі для мобільного меню */
+.mob-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-width: 320px;
+  height: 100vh;
+  background-color: var(--white);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 72px 16px 40px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.mob-menu-nav {
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 168px;
+}
+
+.mob-nav-item {
+  margin-bottom: 40px;
+}
+
+.mob-nav-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--navy-blue);
+}
+
+.mob-nav-item:first-child .mob-nav-text {
+  color: var(--ocean);
+}
+
+.mob-addra {
+  font-style: normal;
+  text-decoration: none;
+
+}
+
+.mob-addr {
+  padding: 0;
+  margin: 0 0 48px 0;
+
+}
+
+.mob-addr-item {
+  margin-bottom: 24px;
+}
+
+.mob-address-item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-address-item:hover,
+.mob-address-item:focus {
+  color: #404bbf;
+}
+
+.soc-links-menu {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 40px;
+  padding-left: 0;
+}
+
+
+/* Кінець стилів для мобільного меню */
 
 /* .fs-icon {
   visibility: hidden;
@@ -870,7 +961,7 @@ input::placeholder {
 }
 
 .chk-btn {
-    font-size: 12px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
@@ -879,7 +970,7 @@ input::placeholder {
 
 .chk-policy {
   display: inline-flex;
-   align-items: center;
+  align-items: center;
   text-decoration: underline;
   width: 16px;
   height: 16px;
@@ -935,6 +1026,10 @@ input::placeholder {
     position: absolute;
   }
 
+  .mob-menu-wrapper {
+    max-width: 428px;
+  }
+
   .fs-icon {
     visibility: hidden;
     display: none;
@@ -959,6 +1054,7 @@ input::placeholder {
     width: 288px;
     /* width: calc((100% - 48px) / 3); */
   }
+
   .modal-menu {
     position: fixed;
     top: 0;
@@ -974,17 +1070,12 @@ input::placeholder {
     visibility: hidden;
     pointer-events: none; */
   }
-  
+
   .modal-menu .is-open {
-   
+
     opacity: 1;
-       pointer-events: auto;
+    pointer-events: auto;
     visibility: visible;
-
-
-
-
-
   }
 }
 
@@ -1124,20 +1215,24 @@ input::placeholder {
   .footer-title-media {
     text-align: start;
   }
-.modal-win {
-  width: 408px;
-  min-height: 584px;
-  padding: 72px 24px 24px 24px;
-}
-.modal-form-input {
-  width: 360px;
-}
-.form-div {
-  gap: 8px;
-}
-.modal-form-text {
-  padding: 8px 16px;
-}
+
+  .modal-win {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-form-input {
+    width: 360px;
+  }
+
+  .form-div {
+    gap: 8px;
+  }
+
+  .modal-form-text {
+    padding: 8px 16px;
+  }
 }
 
 /* Екран більше 1158 px */
