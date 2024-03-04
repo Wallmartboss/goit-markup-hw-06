@@ -1023,10 +1023,6 @@ input::placeholder {
     transform: translateX(0);
   }
 
-  /* .menu-nav {
-    visibility: hidden;
-    position: absolute;
-  } */
   .nav-item {
     display: none;
   }
@@ -1066,16 +1062,6 @@ input::placeholder {
   .team {
     flex-wrap: wrap;
   }
-
-  /* .value-team {
-    /* width: 100%; */
-  /* margin: 0 auto;
-  }
-
-  /*.title-h {
-    justify-content: center; 
-    text-align: center;
-  } */
 
   .value-portfolio {
     width: 288px;
@@ -1260,6 +1246,10 @@ input::placeholder {
 
   .modal-form-text {
     padding: 8px 16px;
+  }
+
+  .ppl {
+    margin-left: 0;
   }
 }
 
