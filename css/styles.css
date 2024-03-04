@@ -88,8 +88,8 @@ body {
 .section:first-child {
   max-width: 320px;
   padding-top: 72px;
-  [padding-bottom: 72px;
-  ] background-repeat: no-repeat;
+  padding-bottom: 72px;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(to bottom,
